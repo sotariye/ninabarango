@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
         />
 
         {/* Architectural Manifesto Overlay */}
-        <div className="absolute inset-0 z-10 flex flex-col items-center justify-start text-center px-6 pt-20 md:pt-32">
+        <div className="absolute inset-0 z-10 flex flex-col items-center justify-end md:justify-start text-center px-6 pb-20 md:pb-0 md:pt-32">
           <h2 className="font-serif-editorial text-7xl md:text-8xl lg:text-[11vw] font-black text-white leading-[0.8] tracking-tighter mb-8 md:mb-12 uppercase drop-shadow-2xl">
             THINK <br className="md:hidden" /> BIGGER.
           </h2>
