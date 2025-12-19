@@ -34,7 +34,8 @@ body {
 }
 
 .animate-marquee {
-  display: inline-block;
+  display: flex;
+  min-width: 100%;
   animation: marquee 60s linear infinite;
   white-space: nowrap;
 }
