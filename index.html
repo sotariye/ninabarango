@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nina Barango | Growth Strategist & Experiential Producer</title>
+    <meta name="title" content="Nina Barango | Growth Strategist & Experiential Producer">
+    <meta name="description"
+        content="Visibility creates opportunity, but structure creates success. I build the operational infrastructure that allows creators to become founders and brands to enter new markets. Based in Toronto.">
+    <meta name="keywords"
+        content="Nina Barango, Experiential Producer Toronto, Growth Strategist, Brand Activation, Market Entry Strategy, SoPlugged, Business Consultant">
+    <meta name="author" content="Nina Barango">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ninabarango.com/">
+    <meta property="og:title" content="Nina Barango | WE'LL FIGURE IT OUT.">
+    <meta property="og:description"
+        content="I operate at the intersection of culture, capital, and community. Designing the systems that turn 'vibes' into scalable assets.">
+    <meta property="og:image" content="https://www.istockphoto.com/photos/black-and-white-head-shot">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ninabarango.com/">
+    <meta property="twitter:title" content="Nina Barango | ARCHITECT OF BUSINESS">
+    <meta property="twitter:description" content="Visibility creates opportunity, but structure creates success.">
+    <meta property="twitter:image" content="https://www.istockphoto.com/photos/black-and-white-head-shot">
+
+    <link rel="icon" type="image/png" href="/ninabarango/favicon.png?v=2">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/ninabarango/assets/index-wx905moS.js"></script>
+  <link rel="stylesheet" crossorigin href="/ninabarango/assets/index-8xYE0SaD.css">
+</head>
+
+<body class="overflow-x-hidden bg-[#FAFAF9]">
+    <div id="scroll-progress" aria-hidden="true"></div>
+    <div id="custom-cursor" aria-hidden="true"></div>
+    <div id="root"></div>
+    <script>
+        // High Performance Cursor Logic
+        const cursor = document.getElementById('custom-cursor');
+        let mouseX = 0, mouseY = 0;
+        let cursorX = 0, cursorY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        function animateCursor() {
+            // Smooth damping for luxury feel
+            const easing = 0.15;
+            cursorX += (mouseX - cursorX) * easing;
+            cursorY += (mouseY - cursorY) * easing;
+            cursor.style.transform = `translate3d(${cursorX}px, ${cursorY}px, 0)`;
+            requestAnimationFrame(animateCursor);
+        }
+        animateCursor();
+
+        document.addEventListener('mouseover', (e) => {
+            if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON' || e.target.closest('.interactive') || e.target.closest('a')) {
+                document.body.classList.add('cursor-hover');
+            }
+        });
+        document.addEventListener('mouseout', (e) => {
+            document.body.classList.remove('cursor-hover');
+        });
+
+        // Scroll Progress Logic
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('scroll-progress').style.width = scrolled + "%";
+        }, { passive: true });
+
+        // Intersection Observer for Reveal Animations
+        const revealCallback = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(revealCallback, {
+            root: null,
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        });
+
+        // Monitor React Root for new reveal elements
+        const rootObserver = new MutationObserver(() => {
+            const reveals = document.querySelectorAll('.reveal:not(.active)');
+            reveals.forEach(r => observer.observe(r));
+        });
+
+        rootObserver.observe(document.getElementById('root'), {
+            childList: true,
+            subtree: true
+        });
+    </script>
+</body>
+
+</html>
