@@ -13,7 +13,7 @@ const TrustTicker: React.FC = () => {
     <div className="bg-[#1C1917] py-6 md:py-8 border-y border-[#1C1917] overflow-hidden">
       <div className="flex w-max">
         <div className="flex animate-marquee shrink-0">
-          {[...Array(6)].map((_, i) => (
+          {[...Array(4)].map((_, i) => (
             <div key={i} className="flex items-center shrink-0">
               {items.map((item, index) => (
                 <React.Fragment key={index}>
@@ -27,7 +27,7 @@ const TrustTicker: React.FC = () => {
           ))}
         </div>
         <div className="flex animate-marquee shrink-0" aria-hidden="true">
-          {[...Array(6)].map((_, i) => (
+          {[...Array(4)].map((_, i) => (
             <div key={i} className="flex items-center shrink-0">
               {items.map((item, index) => (
                 <React.Fragment key={index}>
