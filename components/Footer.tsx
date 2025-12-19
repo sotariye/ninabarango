@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
       {/* Manifesto Section - Architectural Layout for Ultrawide Screens */}
       <div className="w-full relative bg-stone-200 overflow-hidden reveal flex flex-col items-center justify-start">
         <img
-          src="images/footer-portrait.jpg"
+          src={`${import.meta.env.BASE_URL}images/footer-portrait.jpg`}
           alt="Nina Barango Editorial Portrait"
           className="w-full h-auto grayscale brightness-75 transition-transform duration-1000 block"
         />

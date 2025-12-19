@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
       {/* Left: Editorial Photo */}
       <div className="w-full md:w-1/2 h-1/2 md:h-full relative bg-stone-200">
         <img
-          src="images/hero-editorial.jpg"
+          src={`${import.meta.env.BASE_URL}images/hero-editorial.jpg`}
           alt="Nina Barango Editorial"
           className="absolute inset-0 w-full h-full object-cover grayscale"
         />

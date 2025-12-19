@@ -109,7 +109,7 @@ const Proof: React.FC = () => {
                   />
                 ) : (
                   <img
-                    src={project.asset}
+                    src={project.asset.startsWith('http') || project.asset.startsWith('data:') ? project.asset : `${import.meta.env.BASE_URL}${project.asset}`}
                     alt={project.label}
                     className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
                     loading="lazy"
