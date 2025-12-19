@@ -49,7 +49,7 @@ const Proof: React.FC = () => {
     {
       label: "SPEAKING / HOSTING",
       sublabel: "ISWIS Toronto Live Show",
-      asset: "/images/iswis-live.jpg",
+      asset: "images/iswis-live.jpg",
       type: "image",
       url: "https://www.instagram.com/p/DM8TXyhMtWE/?hl=en"
     }
