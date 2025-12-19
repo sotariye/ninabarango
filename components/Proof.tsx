@@ -113,6 +113,7 @@ const Proof: React.FC = () => {
                     alt={project.label}
                     className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
                     loading="lazy"
+                    decoding="async"
                   />
                 )}
               </div>

@@ -47,6 +47,8 @@ const Footer: React.FC = () => {
           src={`${import.meta.env.BASE_URL}images/footer-portrait.jpg`}
           alt="Nina Barango Editorial Portrait"
           className="w-full h-auto grayscale brightness-75 transition-transform duration-1000 block"
+          loading="lazy"
+          decoding="async"
         />
 
         {/* Architectural Manifesto Overlay */}

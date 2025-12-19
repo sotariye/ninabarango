@@ -10,6 +10,9 @@ const Hero: React.FC = () => {
           src={`${import.meta.env.BASE_URL}images/hero-editorial.jpg`}
           alt="Nina Barango Editorial"
           className="absolute inset-0 w-full h-full object-cover grayscale"
+          fetchPriority="high"
+          loading="eager"
+          decoding="sync"
         />
       </div>
 
