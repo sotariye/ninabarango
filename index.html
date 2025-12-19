@@ -28,109 +28,9 @@
 
     <link rel="icon" type="image/png" href="/favicon.png?v=2">
 
-    <script src="https://cdn.tailwindcss.com"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
-    <style>
-        :root {
-            scroll-padding-top: 5rem;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #FAFAF9;
-            color: #1C1917;
-            cursor: none;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .font-serif-editorial {
-            font-family: 'Playfair Display', serif;
-        }
-
-        ::selection {
-            background: #D93025;
-            color: #ffffff;
-        }
-
-        @keyframes marquee {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        .animate-marquee {
-            display: inline-block;
-            animation: marquee 30s linear infinite;
-            white-space: nowrap;
-        }
-
-        /* Optimized Custom Cursor */
-        #custom-cursor {
-            width: 10px;
-            height: 10px;
-            background: #D93025;
-            border-radius: 50%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-            z-index: 9999;
-            transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
-            mix-blend-mode: normal;
-            will-change: transform;
-        }
-
-        .cursor-hover #custom-cursor {
-            width: 60px;
-            height: 60px;
-            background: #D93025;
-            opacity: 0.2;
-            margin-left: -25px;
-            margin-top: -25px;
-        }
-
-        /* Scroll Progress */
-        #scroll-progress {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 3px;
-            background: #D93025;
-            z-index: 1000;
-            width: 0%;
-            transition: width 0.1s ease-out;
-        }
-
-        /* Reveal Animations */
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 1.4s cubic-bezier(0.16, 1, 0.3, 1), transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
-            will-change: transform, opacity;
-        }
-
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Hide cursor on mobile */
-        @media (max-width: 768px) {
-            #custom-cursor {
-                display: none;
-            }
-
-            body {
-                cursor: auto;
-            }
-        }
-    </style>
     <script type="importmap">
 {
   "imports": {
@@ -140,7 +40,6 @@
   }
 }
 </script>
-    <link rel="stylesheet" href="/index.css">
 </head>
 
 <body class="overflow-x-hidden bg-[#FAFAF9]">
