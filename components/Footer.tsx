@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
   const links = [
     { label: "EMAIL", url: "mailto:ninabarango@gmail.com" },
     { label: "LINKEDIN", url: "https://www.linkedin.com/in/nina-barango/" },
-    { label: "INSTAGRAM", url: "https://www.instagram.com/sotariye/" }
+    { label: "READ MY THOUGHTS ON SUBSTACK", url: "https://substack.com/@ninabarango" }
   ];
 
   return (
