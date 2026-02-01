@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
             NINA <br className="hidden md:block" /> BARANGO
           </h1>
           <p className="text-[10px] md:text-xs font-bold tracking-[0.5em] text-[#1C1917] uppercase w-full">
-            CULTURE. CAPITAL. COMMUNITY.
+            BUILDING FOR CREATORS AND ENTREPRENEURS
           </p>
         </div>
       </div>
